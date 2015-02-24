@@ -40,12 +40,15 @@ body{
 }
 .logo{
     opacity: .6;
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .logo-hide{
     opacity: .0;
 }
 .logo-rotate{
-    -ms-transform: rotate(180deg) scale(1.5);
-    -webkit-transform: rotate(180deg) scale(1.5);
-    transform: rotate(180deg) scale(1.5);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
 }
