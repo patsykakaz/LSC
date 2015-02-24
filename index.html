@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width"/>
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="LSC">
+    <meta name="title" content="LSC">
+    <meta name="author" content="LSC">
+    <meta name="description" content="LSC">
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+    
+    <title>Le Side Car</title>
+
+</head>
+
+
+<body>
+    <div id='layer'>
+        <h1 id='caption' class='hide'>LE SIDE CAR</h1>
+        <div id='layer-logo'>
+            <img id='logo' class='logo logo-hide' src='svg/logo.svg' alt='logo Le Side Car'/>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js "></script>
+<script src="js/main.js "></script>
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 90
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+</html>

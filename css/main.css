@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+#layer{
+    max-width: 100%;
+    overflow: hidden;
+    background-color: red;
+    background: url(../img/route3.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#layer h1{
+    position: absolute;
+    right: 200px;
+    letter-spacing: 14px;
+    font-weight: lighter;
+    font-size: 20px;
+    color: rgba(255,255,255,.7);
+}
+
+#layer-logo{
+    margin:auto;
+    text-align: center;
+}
+#logo{
+    margin: auto;
+    max-width: 100%;
+    -moz-transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out;
+    -o-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out;
+}
+.scale-test{
+    -webkit-transform: scale(1.5);
+}
+.logo{
+    opacity: .6;
+}
+.logo-hide{
+    opacity: .0;
+}
+.logo-rotate{
+    -ms-transform: rotate(180deg) scale(1.5);
+    -webkit-transform: rotate(180deg) scale(1.5);
+    transform: rotate(180deg) scale(1.5);
+}
