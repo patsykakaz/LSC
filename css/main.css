@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
+/*
+    topaze = rgb(56,144,130);
+    light-grey = rgb(162,162,162);
+*/
+
+
 body{
     font-family: 'Lato', sans-serif;
+    font-weight: lighter;
 }
 
 #layer{
@@ -30,25 +37,77 @@ body{
 #logo{
     margin: auto;
     max-width: 100%;
-    -moz-transition: all 3s ease-in-out;
-    -webkit-transition: all 3s ease-in-out;
-    -o-transition: all 3s ease-in-out;
-    transition: all 3s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
 }
 .scale-test{
     -webkit-transform: scale(1.5);
 }
 .logo{
     opacity: .6;
-    -ms-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 .logo-hide{
     opacity: .0;
 }
 .logo-rotate{
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.level{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 200px;
+    background-color: rgb(249,249,249);
+}
+
+#level2{
+    background-color: rgb(56,144,130);
+}
+#level2 nav{
+    color: white;
+    text-align: center;
+}
+#level2 h1{
+    padding: 10px;
+    letter-spacing: 10px;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+#level3{
+    background-color: white;
+}
+.side-image{
+    position: absolute;
+    overflow: hidden;
+}
+.side-image img{
+    margin: auto;
+}
+.side-caption{
+    position: absolute;
+}
+.side-caption .content{
+    padding: 200px 200px 200px 200px;
+    color: rgb(162,162,162);
+}
+.content h2{
+    margin-bottom: 40px;
+    letter-spacing: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: rgb(56,144,130);
+}
+.content p{
+    line-height: 180%;
+    text-align: justify;
 }
