@@ -15,7 +15,49 @@ $(document).ready(function(){
 
     $('#level3 .side-caption').width($(window).width()-$('#level3 .side-image').width()).css('left', $('#level3 .side-image').width()).height($(window).height());
 
+    // array des offset.top des étages 
+    levelPositions = [];
+    $('.level').each(function(){
+        offsetTop = $(this).offset().top;
+        levelPositions.push(offsetTop);
+    });
+
+    // gestion du scroll
+    previousScroll = 0;
+    // $(document).scroll(function(){
+    // currentScroll = $(this).scrollTop();
+    // if (currentScroll > previousScroll +20){
+    //     scrollTop = $(window).scrollTop();
+    //     for (i = 1; i<=6; i++) {
+    //         if(levelPositions[i]>scrollTop){
+    //             nextLevel = i;
+    //             break;
+    //         }
+    //     };
+    //     $('body').animate({
+    //         scrollTop: levelPositions[nextLevel]
+    //     });
+    // } else {
+    //     scrollTop = $(window).scrollTop();
+    //     for (i = 1; i<=6; i++) {
+    //         if(levelPositions[i]>scrollTop){
+    //             nextLevel = i;
+    //             break;
+    //         }
+    //     };
+    //     $('body').animate({
+    //         scrollTop: levelPositions[nextLevel-2]
+    //     });
+    // }
+    // previousScroll = currentScroll;
+
+
+    // });
+
+
 });
+
+
 
 
 

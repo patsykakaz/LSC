@@ -22,6 +22,9 @@
 
 
 <body>
+    <div id='arrow'>
+        <i class='fa fa-4x fa-angle-down'></i>
+    </div>
     <div id='level1' class='level'>
         <div id='layer'>
             <h1 id='caption' class='hide'>LE SIDE CAR</h1>
@@ -68,8 +71,9 @@
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js "></script>
-<script src="js/main.js "></script>
-<script src="js/main2.js "></script>
+<script src="js/main.js"></script>
+<script src="js/main2.js"></script>
+<script src="http://www.betc-startup-lab.com/js/vendor/jquery.touchSwipe.min.js"></script>
 <script type="text/javascript">
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -79,7 +83,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 200);
         return false;
       }
     }
