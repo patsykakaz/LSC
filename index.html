@@ -11,8 +11,11 @@
 
 
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.override.css" rel="stylesheet" type="text/css">
 <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/elevator.css" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
     
     <title>Le Side Car</title>
 
@@ -20,17 +23,67 @@
 
 
 <body>
-    <div id='level1' class='level'>
-        <div id='layer'>
-            <h1 id='caption' class='hide'>LE SIDE CAR</h1>
-            <div id='layer-logo'>
-                <img id='logo' class='logo logo-hide' src='svg/logo.svg' alt='logo Le Side Car'/>
-            </div>
-        </div>    
+<div id='projects'>
+    <div id='level1' class='slide active'>
+        <div id='layer_logo'>
+            <img id='logo' class='logo logo-hide' src='svg/logo.svg' alt='logo Le Side Car'/>
+        </div>
     </div>
+    <div id='level2' class='slide active hide'>
+        <nav>
+            <a href='#level3'>
+                <h1>L'AGENCE</h1>
+            </a>
+            <a href='#level4'>
+                <h1>NOTRE OFFRE</h1>
+            </a>
+            <a href='#level5'>
+                <h1>NOUS CONTACTER</h1>
+            </a>
+        </nav>
+    </div>
+    <div id='level3' class='slide active'>
+        <div class='side-image'>
+            <img src='img/side1.jpg' />
+        </div>
+        <div class='side-caption'>
+            <div class='content'>
+                <h2>L'AGENCE</h2>
+                <p>
+                    ...ouvre enfin les portes de la communication de qualité aux petites et moyennes entreprises.
+                </p>
+                <p>
+                    ...c’est une structure courte et une équipe formée dans les plus grandes agences pour fabriquer de la publicité à forte valeur ajoutée : une stratégie simple & efficace et des objets publicitaires de qualité qui plaisent, qui font parler et qui répondent à vos objectifs.
+                </p>
+                <p>
+                    ...c’est une agence jeune & moderne, fondée par des gens tout aussi jeunes & modernes : biberonnés au digital, rapides, curieux, passionnés, et toujours prêts à sortir des sentiers battus pour apporter des solutions neuves qui fonctionnent vraiment.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id='level4' class='slide active'>
+        <div class='banner text-center'>
+            <img src='img/banner_lsc.jpg' alt='banner LSC' />
+            <h2 class='titre'>L'OFFRE</h2>
+        </div>
+        <div class='caption text-center'>
+            <div class='item-offre'>POSITIONNEMENT</div>
+            <div class='item-offre'>IDENTITE DE MARQUE</div>
+            <div class='item-offre'>PUBLICITE</div>
+            <div class='item-offre'>SERVICE DIGITAUX</div>
+            <div class='item-offre'>CONTENUS</div>
+            <div class='item-offre'>RELATIONS PRESSE</div>
+            <div class='item-offre'>SOCIAL MEDIA</div>
+        </div>
+    </div>
+    <div id='level5' class='slide active'>
+    </div>
+</div>
+<div id='timer' rel='off'></div>
 </body>
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js "></script>
-<script src="js/main.js "></script>
+<script src="js/main.js"></script>
+<script src="js/elevator.js"></script>
 </html>

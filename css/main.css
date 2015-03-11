@@ -11,38 +11,80 @@ body{
     font-weight: lighter;
 }
 
-#arrow{
-    z-index: 5;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(56,144,130,.7);
-}#arrow i{
+
+#level1{
+    background-image: url('../img/route_old.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+#level2{
+    background-color: rgb(56,144,130);
+}
+#level2 nav{
     color: white;
+    text-align: center;
 }
-
-#layer{
-    max-width: 100%;
-    overflow: hidden;
-    background-color: red;
-    background: url(../img/route3.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-#layer h1{
-    position: absolute;
-    right: 200px;
-    letter-spacing: 14px;
+#level2 h1{
+    padding: 10px;
+    letter-spacing: 10px;
+    font-family: 'Lato', sans-serif;
     font-weight: lighter;
+    font-size: 14px;
+}
+#level3{
+}
+.side-image{
+    position: absolute;
+    overflow: hidden;
+}
+.side-image img{
+    margin: auto;
+}
+.side-caption{
+    position: absolute;
+}
+.side-caption .content{
+    padding: 200px 200px 200px 200px;
+    color: rgb(162,162,162);
+}
+h2, .content h2{
+    margin-bottom: 40px;
+    letter-spacing: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: rgb(56,144,130);
+}
+.content p{
+    line-height: 180%;
+    text-align: justify;
+}
+#level4{
+}
+#level4 .banner img{
+    width: 100%;
+}
+#level4 .titre{
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    color: white;
     font-size: 20px;
-    color: rgba(255,255,255,.7);
+}
+#level4 .caption{
+    padding: 80px 30px 0 30px;
+    margin: auto;
+}
+#level4 .item-offre{
+    line-height: 45px;
+    letter-spacing: 2px;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(56,144,130);
 }
 
-#layer-logo{
+
+#layer_logo{
     margin:auto;
     text-align: center;
 }
@@ -70,56 +112,4 @@ body{
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-}
-
-.level{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    min-height: 200px;
-    background-color: rgb(249,249,249);
-}
-
-#level2{
-    background-color: rgb(56,144,130);
-}
-#level2 nav{
-    color: white;
-    text-align: center;
-}
-#level2 h1{
-    padding: 10px;
-    letter-spacing: 10px;
-    font-family: 'Lato', sans-serif;
-    font-weight: lighter;
-    font-size: 14px;
-}
-
-#level3{
-    background-color: white;
-}
-.side-image{
-    position: absolute;
-    overflow: hidden;
-}
-.side-image img{
-    margin: auto;
-}
-.side-caption{
-    position: absolute;
-}
-.side-caption .content{
-    padding: 200px 200px 200px 200px;
-    color: rgb(162,162,162);
-}
-.content h2{
-    margin-bottom: 40px;
-    letter-spacing: 20px;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    color: rgb(56,144,130);
-}
-.content p{
-    line-height: 180%;
-    text-align: justify;
 }

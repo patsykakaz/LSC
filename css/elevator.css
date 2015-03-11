@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*
+    topaze = rgb(56,144,130);
+    light-grey = rgb(162,162,162);
+*/
+
+#projects {
+    height:100%;
+}
+ 
+.slide {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    transition: height .6s ease-in-out;
+}
+ 
+.slide:nth-child(1){z-index:10;}
+.slide:nth-child(2){z-index:9;}
+.slide:nth-child(3){z-index:8;}
+.slide:nth-child(4){z-index:7;}
+.slide:nth-child(5){z-index:6;}
+ 
+.active.slide {
+    height: 100%;
+}
