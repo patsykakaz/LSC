@@ -25,11 +25,21 @@ body{
 }
 
 #level1{
-    background-image: url('../img/route_old.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center; 
+    background: url('../img/route_old.jpg') no-repeat fixed center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+#level1 h1{
+    position: absolute;
+    right: 10%;
+    top: 47%;
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    color: rgba(255,255,255,.5);
+}
+
 #level2,#level2 h1{
     background-color: rgb(56,144,130);
 }
@@ -96,9 +106,48 @@ h2, .content h2{
 }
 
 
-#layer_logo{
+#secondary-logo{
+    position: absolute;
+    z-index: 99;
+    display: none;
+}#secondary-logo img{
+    padding-left: 45px;
+    max-width: 240px;
+    max-height: 240px;
+    opacity: .85;
+}
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #secondary-logo img{
+        padding-left: 30px;
+        max-width: 180px;
+        max-height: 180px;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    #secondary-logo img{
+        padding-left: 25px;
+        max-width: 150px;
+        max-height: 150px;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    #secondary-logo img{
+        padding-left: 20px;
+        max-width: 120px;
+        max-height: 120px;
+    }
+}
+@media screen and (max-width: 450px) {
+    #secondary-logo img{
+        padding-left: 15px;
+        max-width: 90px;
+        max-height: 90px;
+    }
+}
+
+#layer-logo{
+    position: absolute;
     margin:auto;
-    text-align: center;
 }
 #logo{
     margin: auto;
@@ -107,9 +156,6 @@ h2, .content h2{
     -webkit-transition: all 2s ease-in-out;
     -o-transition: all 2s ease-in-out;
     transition: all 2s ease-in-out;
-}
-.scale-test{
-    -webkit-transform: scale(1.5);
 }
 .logo{
     opacity: .6;

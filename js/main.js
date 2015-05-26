@@ -1,4 +1,5 @@
 
+// GESTION LOGO rebuiding
 $(document).ready(function(){
     $('#layer-logo').css('width', $(window).width()).css('height',$(window).height());
     if($(window).width()>$(window).height()){
@@ -6,7 +7,13 @@ $(document).ready(function(){
     }else{
         $('#logo').css('height',$(window).width()/1.3).css('width',$(window).width()/1.3);
     }
-    $('#logo').css('margin-top',($(window).height()-$('#logo').outerHeight())/2+'px');
+    $('#logo').css('margin-top',($(window).height()-$('#logo').outerHeight())/2+'px').css('margin-left',($(window).width()-$('#logo').outerWidth())/2+'px');
+});
+// ./GESTION LOGO rebuiding
+
+
+$(document).ready(function(){
+
 
     $(window).load(function(){
         $('#logo').removeClass('logo-hide');
