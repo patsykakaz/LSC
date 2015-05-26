@@ -11,6 +11,18 @@ body{
     font-weight: lighter;
 }
 
+#nav{
+    position: absolute;
+    z-index: 10;
+    right: 24px;
+    /*top: 40%;*/
+    width: 18px;
+}
+#nav .fa{
+    padding: 3px;
+    margin: 10px;
+    color: rgb(56,144,130);
+}
 
 #level1{
     background-image: url('../img/route_old.jpg');
@@ -18,7 +30,7 @@ body{
     background-attachment: fixed;
     background-position: center; 
 }
-#level2{
+#level2,#level2 h1{
     background-color: rgb(56,144,130);
 }
 #level2 nav{

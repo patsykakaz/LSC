@@ -1,16 +1,16 @@
 var delta = 0;
 var currentSlideIndex = 0;
-var scrollThreshold = 25;
+var scrollThreshold = 20;
 var slides = $(".slide");
-var numSlides = slides.length;
+var numSlides = slides.length -1;
 
 function elementScroll(e){
   console.log (Math.abs(delta));
     // --- Scrolling up ---
-    if (e.originalEvent.detail < 0 || e.originalEvent.wheelDelta > 0) { 
+    if(e.originalEvent.detail < 0 || e.originalEvent.wheelDelta > 0){
         delta--;
-        if($('#timer').attr('rel') == 'off'){
-            if ( Math.abs(delta) >= scrollThreshold){
+        if($('#timer').attr('deploy') == 'off'){
+            if(Math.abs(delta) >= scrollThreshold){
                 prevSlide();
             }
         }else{
@@ -18,10 +18,10 @@ function elementScroll(e){
         }
     }
     // --- Scrolling down ---
-    else {
+    else{
         delta++;
-        if($('#timer').attr('rel') == 'off'){
-            if ( Math.abs(delta) >= scrollThreshold){
+        if($('#timer').attr('deploy') == 'off'){
+            if(Math.abs(delta) >= scrollThreshold){
                 nextSlide();
             }
         }else{
@@ -31,36 +31,46 @@ function elementScroll(e){
     // Prevent page from scrolling
     return false;
 }
- 
- 
+
 function showSlide(){
     // reset
-    $('#timer').attr('rel', 'on');
+    $('#timer').attr('deploy', 'on');
     setTimeout(function(){
-        $('#timer').attr('rel', 'off');
+        $('#timer').attr('deploy', 'off');
     },700);
     delta = 0;
     slides.each(function(i, slide){
         $(slide).toggleClass('active', (i >= currentSlideIndex));
     });
-    // $(document).trigger('showingSlide');
+    $(document).trigger('showingSlide');
 }
- 
- 
+
 function prevSlide(){
     currentSlideIndex--;
     if (currentSlideIndex < 0) {
         currentSlideIndex = 0;
     }
     showSlide();
+    indexNav();
 }
  
 function nextSlide(){
     currentSlideIndex++;
-    if (currentSlideIndex > numSlides) { 
+    if (currentSlideIndex > numSlides){
         currentSlideIndex = numSlides;
     }
     showSlide();
+    indexNav();
+}
+
+function indexNav(){
+    if(currentSlideIndex > 1){
+        navIndex = currentSlideIndex -2;
+        setTimeout(function(){
+            $('#nav .fa').not('#nav .fa:eq('+navIndex+')').removeClass('fa-circle').addClass('fa-circle-o');
+            $('#nav .fa:eq('+navIndex+')').removeClass('fa-circle-o').addClass('fa-circle');
+        },200);
+    }
 }
  
 $(window).on({

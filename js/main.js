@@ -13,18 +13,22 @@ $(document).ready(function(){
         setTimeout(function() {
             $('#logo').addClass('logo-rotate');
         }, 3000);
-    });
+    // NAV
+        $('#nav').css('margin-top', ($(window).height()-$('#nav').outerHeight())/2);
+    // ./NAV
 
     // #level2
-    $('#level2 nav').css('margin-top', ($(window).height()-$('#level2 nav').outerHeight())/2);
+        // Placement menu en milieu de page
+        $('#level2 nav').css('margin-top', ($(window).height()-$('#level2 nav').outerHeight())/2);
     // ./#level2
 
-    // #level3
-    $('#level3 .side-image').height($(window).height()).width($(window).width()/3);
-    $('#level3 .side-image img').height($(window).height());
-    $('#level3 .side-caption').width($(window).width()-$('#level3 .side-image').width()).css('left', $('#level3 .side-image').width()).height($(window).height());
-    // ./#level3
-
+        // #level3
+        $('#level3 .side-image').height($(window).height()).width($(window).width()/3);
+        $('#level3 .side-image img').height($(window).height());
+        $('#level3 .side-caption').width($(window).width()-$('#level3 .side-image').width()).css('left', $('#level3 .side-image').width()).height($(window).height());
+        // ./#level3
+    });
+    
 });
 
 $(window).resize(function(){
@@ -35,6 +39,10 @@ $(window).resize(function(){
         $('#logo').css('height',$(window).width()/1.5).css('width',$(window).width()/1.5);
     }
     $('#logo').css('margin-top',($(window).height()-$('#logo').outerHeight())/2+'px');
+
+// NAV
+    $('#nav').css('margin-top', ($(window).height()-$('#nav').outerHeight())/2);
+// ./NAV
 
     // #level2
     $('#level2 nav').css('margin-top', ($(window).height()-$('#level2 nav').outerHeight())/2);
