@@ -14,3 +14,25 @@ $(document).ready(function(){
         }
     });
 });
+
+
+// SideMenu icon btn
+$(document).ready(function(){
+    $('.side-menu-item').mouseover(function(){
+        $(this).children('.side-menu-caption').removeClass('off');
+    })
+    $('.side-menu-item').mouseout(function(){
+        target = $(this).children('.side-menu-caption');
+        if(parseInt($(this).attr('rel')) != currentSlideIndex){
+            target.addClass('off');
+        }
+    })
+    $('.side-menu-item').click(function(){
+        currentSlideIndex = parseInt($(this).attr('rel'));
+        showSlide();
+        indexNav();
+        deploySecondaryLogo();
+    })
+});
+
+// ./SideMenu icon btn

@@ -16,12 +16,30 @@ body{
     z-index: 10;
     right: 24px;
     /*top: 40%;*/
-    width: 18px;
+    width: 180px;
+    text-align: right;
+}
+#nav .side-menu-item{
+    display: block;
+    color: rgb(56,144,130);
 }
 #nav .fa{
+    display: inline-block;
+    padding: 3px;
+    margin: 10px 10px 10px 0px;
+}
+#nav .side-menu-caption{
+    display: inline-block;
     padding: 3px;
     margin: 10px;
     color: rgb(56,144,130);
+    -moz-transition: all .02s ease-in-out;
+    -webkit-transition: all .02s ease-in-out;
+    -o-transition: all .02s ease-in-out;
+    transition: all .02s ease-in-out;
+}
+#nav .side-menu-caption.off{
+    color: transparent;
 }
 
 #level1{

@@ -47,7 +47,7 @@ function showSlide(){
 
 function prevSlide(){
     currentSlideIndex--;
-    if (currentSlideIndex <= 0) {
+    if (currentSlideIndex <= 0){
         currentSlideIndex = 0;
         reduceSecondaryLogo();
     }
@@ -76,10 +76,12 @@ function reduceSecondaryLogo(){
 
 function indexNav(){
     if(currentSlideIndex > 1){
-        navIndex = currentSlideIndex -2;
+        navIndex = currentSlideIndex-2;
         setTimeout(function(){
             $('#nav .fa-custom').not('#nav .fa:eq('+navIndex+')').removeClass('fa-circle').addClass('fa-circle-o');
             $('#nav .fa-custom:eq('+navIndex+')').removeClass('fa-circle-o').addClass('fa-circle');
+            $('#nav .side-menu-caption').addClass('off');
+            $('#nav .side-menu-caption:eq('+(navIndex+1)+')').removeClass('off');
         },200);
     }
 }
