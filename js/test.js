@@ -13,6 +13,9 @@ $(document).ready(function(){
             wrapper.css('height', 0);
         }
     });
+
+$svg = $("#secondary-logo-svg");
+$("#testSVG", $svg).attr('style', "fill:red");
 });
 
 
@@ -34,5 +37,53 @@ $(document).ready(function(){
         deploySecondaryLogo();
     })
 });
-
 // ./SideMenu icon btn
+
+
+// puzzle
+x = 0;
+y = 0;
+unit = 200;
+$('.puzzle-item').each(function(){
+    title = $(this).children('h3');
+    title.css('margin-top', ($(this).outerHeight()-title.outerHeight())/2);
+    if(x >= 600){
+        x = 0;
+        y += 200;
+    }
+    $(this).css('background-position', x+'px '+y+'px');
+    $(this).css('left',x).css('top',y);
+    x += 200;
+});
+$('.puzzle-item:eq(4)').css('background-image','none');
+// ./puzzle
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

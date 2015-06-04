@@ -5,7 +5,6 @@
     light-grey = rgb(162,162,162);
 */
 
-
 .item-offre{
 
 }
@@ -31,3 +30,74 @@
 .item-offre-content.off{
     height: 0px;
 }
+
+#testXX path{
+    background-color: purple;
+    fill: red;
+}
+
+
+/* puzzle */
+#puzzle{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: white;
+    /*border: 1px solid rgba(0,0,0,.2);*/
+}
+.puzzle-item{
+    position: absolute;
+    display: inline-block;
+    width: 198px;
+    height: 198px;
+    background-image: url('../img/puzzle.jpg');
+    background-color: white;
+    /*border: 2px solid white;*/
+    /*border: 1px solid rgba(0,0,0,.1);*/
+    text-align: center;
+}
+#puzzle h2{
+    letter-spacing: 2px;
+}#puzzle h3{
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgba(0,0,0,.3);
+    color: rgb(200,200,200);
+    text-shadow: 0 0 1px rgba(0,0,0,.3);
+    font-weight: lighter;
+}
+
+#puzzle h3.bright-puzzle-piece{
+    background-color: rgba(255,255,255,.3);
+    color: rgb(56,144,130);
+    text-shadow: 0 0 1px rgba(0,0,0,.3);
+}
+/* ./puzzle */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

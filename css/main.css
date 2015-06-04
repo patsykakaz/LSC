@@ -49,13 +49,20 @@ body{
     -o-background-size: cover;
     background-size: cover;
 }
-#level1 h1{
+#signature{
     position: absolute;
     right: 10%;
-    top: 47%;
+    top: 40%;
+}#signature h1, #signature h4{
+    margin-top: 0;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     color: rgba(255,255,255,.5);
+}
+#city{
+    position: absolute;
+    bottom: 10px;
+    color:white;
 }
 
 #level2,#level2 h1{
@@ -123,15 +130,14 @@ h2, .content h2{
     color: rgb(56,144,130);
 }
 
-
 #secondary-logo{
     position: absolute;
     z-index: 99;
+    /*width: 840px;*/
+    /*height: 840px;*/
     display: none;
 }#secondary-logo img{
     padding-left: 45px;
-    max-width: 240px;
-    max-height: 240px;
     opacity: .85;
 }
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
