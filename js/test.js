@@ -55,7 +55,7 @@ $('.puzzle-item').each(function(){
     $(this).css('left',x).css('top',y);
     x += 200;
 });
-$('.puzzle-item:eq(4)').css('background-image','none');
+$('.puzzle-item:eq(0)').css('background-image','none');
 // ./puzzle
 
 
