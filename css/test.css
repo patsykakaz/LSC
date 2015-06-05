@@ -43,7 +43,7 @@
     width: 600px;
     height: 600px;
     margin: auto;
-    background-color: white;
+    background-color: rgb(56,144,130);
     border: 1px solid rgba(0,0,0,.2);
 }
 .puzzle-item{
