@@ -44,7 +44,10 @@
     height: 600px;
     margin: auto;
     background-color: rgb(56,144,130);
-    border: 1px solid rgba(0,0,0,.2);
+    border: 1px solid rgba(56,144,130,.04);
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 9;
 }
 .puzzle-item{
     position: absolute;
@@ -70,10 +73,15 @@
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     text-align: center;
-    /*background-color: rgba(255,255,255,.3);*/
     color: rgb(170,170,170);
-    /*text-shadow: 0 0 1px rgba(0,0,0,.3);*/
     font-weight: normal;
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}.puzzle-item h3:hover{
+    background-color: rgba(255,255,255,.3);
+    text-shadow: 0 0 1px rgba(0,0,0,.3);
 }
 
 #puzzle h3.bright-puzzle-piece{
