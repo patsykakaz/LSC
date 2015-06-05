@@ -41,21 +41,58 @@ $(document).ready(function(){
 
 
 // puzzle
-x = 0;
-y = 0;
-unit = 200;
-$('.puzzle-item').each(function(){
-    title = $(this).children('h3');
-    title.css('margin-top', ($(this).outerHeight()-title.outerHeight())/2);
-    if(x >= 600){
-        x = 0;
-        y += 200;
-    }
-    $(this).css('background-position', x+'px '+y+'px');
-    $(this).css('left',x).css('top',y);
-    x += 200;
-});
-$('.puzzle-item:eq(0)').css('background-image','none');
+
+if($(window).width() > $(window).height()){
+    masterX = $(window).height()*0.8;
+    $('#puzzle').width(masterX).height(masterX).css('margin-top', ($(document).height()-masterX)/2);
+    $('.puzzle-item').width(masterX/3).height(masterX/3);
+
+    x = 0;
+    y = 0;
+    $('.puzzle-item').each(function(){
+        title = $(this).children('h3');
+        title.css('margin-top', ($(this).outerHeight()-title.outerHeight())/2);
+        if(x >= masterX){
+            x = 0;
+            y += masterX/3;
+        }
+        $(this).css('background-position', x+'px '+y+'px');
+        $(this).css('left',x).css('top',y);
+        x += masterX/3;
+    });
+    $('.puzzle-item:eq(0)').css('background-image','none');
+}
+
+    // moving puzzle
+    $('.puzzle-item').click(function(){
+        emptyRel = parseInt($('#puzzle-empty').attr('rel'));
+        offset = $(this).position();
+        emptyPosition = $('#puzzle-empty').position();
+        if(parseInt($(this).attr('rel'))-emptyRel == 3){
+            $('#puzzle-empty').attr('rel',$(this).attr('rel'));
+            $(this).attr('rel',emptyRel);
+            $(this).css('top', offset.top-masterX/3);
+            $('#puzzle-empty').css('top', emptyPosition.top+masterX/3);
+        }else if(emptyRel-parseInt($(this).attr('rel')) == 3){
+            $('#puzzle-empty').attr('rel',$(this).attr('rel'));
+            $(this).attr('rel',emptyRel);
+            $(this).css('top', offset.top+masterX/3);
+            $('#puzzle-empty').css('top', emptyPosition.top-masterX/3);
+        }
+        else if(parseInt($(this).attr('rel'))-emptyRel == 1){
+            $('#puzzle-empty').attr('rel',$(this).attr('rel'));
+            $(this).attr('rel',emptyRel);
+            $(this).css('left', offset.left-masterX/3);
+            $('#puzzle-empty').css('left', emptyPosition.left+masterX/3);
+        }else if(emptyRel-parseInt($(this).attr('rel')) == 1){
+            $('#puzzle-empty').attr('rel',$(this).attr('rel'));
+            $(this).attr('rel',emptyRel);
+            $(this).css('left', offset.left+masterX/3);
+            $('#puzzle-empty').css('left', emptyPosition.left-masterX/3);
+        }
+    });
+    // ./moving puzzle
+
 // ./puzzle
 
 
