@@ -101,26 +101,3 @@ if($(window).width() > $(window).height()){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

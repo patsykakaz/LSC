@@ -78,11 +78,20 @@ function indexNav(){
     if(currentSlideIndex > 1){
         navIndex = currentSlideIndex-2;
         setTimeout(function(){
+            $('#nav').removeClass('fade-nav');
             $('#nav .fa-custom').not('#nav .fa:eq('+navIndex+')').removeClass('fa-circle').addClass('fa-circle-o');
             $('#nav .fa-custom:eq('+navIndex+')').removeClass('fa-circle-o').addClass('fa-circle');
             $('#nav .side-menu-caption').addClass('off');
             $('#nav .side-menu-caption:eq('+(navIndex+1)+')').removeClass('off');
+
+            if(currentSlideIndex == 2 || currentSlideIndex == 4){
+                $('#nav').addClass('white-nav');
+            }else{
+                $('#nav').removeClass('white-nav');
+            }
         },200);
+    }else{
+        $('#nav').addClass('fade-nav');
     }
 }
  
