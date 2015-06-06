@@ -1,4 +1,10 @@
 
+
+
+
+
+
+
 // GESTION LOGO rebuiding
 $(document).ready(function(){
     $('#layer-logo').css('width', $(window).width()).css('height',$(window).height());
@@ -32,7 +38,8 @@ $(document).ready(function(){
         // #level3
         $('#level3 .side-image').height($(window).height()).width($(window).width()/3);
         $('#level3 .side-image img').height($(window).height());
-        $('#level3 .side-caption').width($(window).width()-$('#level3 .side-image').width()).css('left', $('#level3 .side-image').width()).height($(window).height());
+        $('#level3 .side-caption').width($(window).width()-$('#level3 .side-image').width()).css('left', $('#level3 .side-image').width());
+        $('#level3 .side-caption').css('margin-top', ($(window).height()-$('#level3 .side-caption').outerHeight())/2);
         // ./#level3
     });
     
@@ -56,3 +63,11 @@ $(window).resize(function(){
     // ./#level2
 
 });
+
+
+
+// level 1
+$(document).ready(function(){
+    $('#city').css('margin-left', ($(window).width()-$('#city').outerWidth())/2+20);
+});
+

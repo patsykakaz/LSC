@@ -62,7 +62,14 @@ body{
 #city{
     position: absolute;
     bottom: 10px;
-    color:white;
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgba(255,255,255,.5);
+}
+.city{
+    margin: 30px;
+    position: relative;
+    left: 5px
 }
 
 #level2,#level2 h1{
@@ -92,7 +99,10 @@ body{
     position: absolute;
 }
 .side-caption .content{
-    padding: 200px 200px 200px 200px;
+    width: 65%;
+    padding-right: 10%;
+    margin: auto;
+    text-align: justify;
     color: rgb(162,162,162);
 }
 h2, .content h2{
