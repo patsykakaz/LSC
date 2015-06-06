@@ -101,10 +101,9 @@ $(window).on({
 
 
 // MOBILE
-if($(window).width()<600){
     var delta;
-        dragThreshold = 0.15;/-/ "percentage" to drag before engaging
-        dragStart = null;    /-/ used to determine touch / drag distance
+        dragThreshold = 0.15;
+        dragStart = null;
         percentage = 0,
         target,
         previousTarget;
@@ -179,12 +178,12 @@ if($(window).width()<600){
      
     }
      
-    $(‘#projects’).on({
+    $('#projects').on({
         'touchstart': touchStart,
         'touchmove': touchMove,
         'touchend': touchEnd
     });
-}
+
 
 
 
