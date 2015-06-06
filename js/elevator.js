@@ -84,10 +84,10 @@ function indexNav(){
             $('#nav .side-menu-caption').addClass('off');
             $('#nav .side-menu-caption:eq('+(navIndex+1)+')').removeClass('off');
 
-            if(currentSlideIndex == 2 || currentSlideIndex == 4){
-                $('#nav').addClass('white-nav');
+            if(currentSlideIndex == 3){
+                $('#nav').addClass('green-nav');
             }else{
-                $('#nav').removeClass('white-nav');
+                $('#nav').removeClass('green-nav');
             }
         },200);
     }else{
@@ -101,7 +101,7 @@ $(window).on({
 
 
 // MOBILE
-/*var delta;
+var delta;
     dragThreshold = 0.15;/-/ "percentage" to drag before engaging
     dragStart = null;    /-/ used to determine touch / drag distance
     percentage = 0,
@@ -183,7 +183,7 @@ $(‘#projects’).on({
     'touchmove': touchMove,
     'touchend': touchEnd
 });
-*/
+
 
 
     $('#level2 a').click(function(){

@@ -38,7 +38,7 @@ body{
     display: inline-block;
     padding: 3px;
     margin: 10px 10px 10px 0px;
-    color: rgb(56,144,130);
+    color:white;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -48,13 +48,13 @@ body{
     display: inline-block;
     padding: 3px;
     margin: 10px;
-    color: rgb(56,144,130);
+    color:white;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all  .2s ease-in-out;
-}#nav.white-nav .fa,#nav.white-nav .side-menu-caption{
-    color: white;
+}#nav.green-nav .fa,#nav.green-nav .side-menu-caption{
+    color: rgb(56,144,130);
 }#nav.fade-nav .fa,#nav.fade-nav .side-menu-caption{
     color: transparent;
 }
