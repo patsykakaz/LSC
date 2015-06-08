@@ -190,18 +190,19 @@ h2, .content h2{
 }
 #level5 a{
     display: inline-block;
-    padding: 20px 50px;
+    padding: 40px 80px;
     margin:auto;
     font-size: 35px;
-    color: white;
+    background-color: white;
+    color: rgb(56,144,130);
     border: 1px solid rgba(255,255,255,.3);
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all  .3s ease-in-out;
 }#level5 a:hover{
-    background-color: white;
-    color: rgb(56,144,130);;
+    background-color: rgb(56,144,130);
+    color: white;
     border: 1px solid rgba(255,255,255,.3);
     -moz-transition: all .1s ease-in-out;
     -webkit-transition: all .1s ease-in-out;
@@ -212,12 +213,19 @@ h2, .content h2{
 #secondary-logo{
     position: absolute;
     z-index: 99;
-    /*width: 840px;*/
-    /*height: 840px;*/
+    left: 20px;
+    width: 100px;
+    height: 100px;
     display: none;
 }#secondary-logo img{
     padding-left: 45px;
     opacity: .85;
+}
+#logo-fill{
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all  .2s ease-in-out;
 }
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     #secondary-logo img{
