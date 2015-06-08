@@ -193,20 +193,22 @@ $(window).on({
     });
 */
 
+$('#level1').click(function(){
+    nextSlide();
+});
 
-
-    $('#level2 a').click(function(){
-        if($(this).attr('rel') == 'level3'){
-            currentSlideIndex = 2;
-            showSlide();
-            indexNav();
-        }else if($(this).attr('rel') == 'level4'){
-            currentSlideIndex = 3;
-            showSlide();
-            indexNav();
-        }else if($(this).attr('rel') == 'level5'){
-            currentSlideIndex = 4;
-            showSlide();
-            indexNav();
-        }
-    });
+$('#level2 a').click(function(){
+    if($(this).attr('rel') == 'level3'){
+        currentSlideIndex = 2;
+        showSlide();
+        indexNav();
+    }else if($(this).attr('rel') == 'level4'){
+        currentSlideIndex = 3;
+        showSlide();
+        indexNav();
+    }else if($(this).attr('rel') == 'level5'){
+        currentSlideIndex = 4;
+        showSlide();
+        indexNav();
+    }
+});

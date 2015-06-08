@@ -77,21 +77,16 @@ body{
 #signature{
     position: absolute;
     right: 10%;
-    bottom: 50%;
-}#signature h1, #signature h4{
+    bottom: 45%;
+    width: auto;
+}#signature img{
+    /*max-width: 300px;*/
+}
+#signature h4{
     margin-top: 0;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     color: rgba(255,255,255,.5);
-}
-@media screen and (max-width: 768px){
-    #signature{
-        position: absolute;
-        bottom: 20px;
-        left: 10%;
-    }#signature h1, #signature h4{
-        margin-top: 0;
-    }
 }
 #city{
     position: absolute;
@@ -105,6 +100,26 @@ body{
     position: relative;
     left: 5px
 }
+@media screen and (max-width: 768px){
+    #signature{
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+    }
+    #signature h1, #signature h4{
+        display: inline-block;
+        width: 47%;
+        padding-left: 40px;
+        text-align: right;
+    }#signature h4{
+        text-align: left;
+    }
+    .city{
+        display: none;
+    }
+}
+
 
 #level2,#level2 h1{
     background-color: rgb(56,144,130);
@@ -119,6 +134,12 @@ body{
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     font-size: 14px;
+    -moz-transition: all .05s ease-in-out;
+    -webkit-transition: all .05s ease-in-out;
+    -o-transition: all .05s ease-in-out;
+    transition: all  .05s ease-in-out;
+}#level2 h1:hover{
+    letter-spacing: 12px;
 }
 #level3{
 }
@@ -202,21 +223,18 @@ h2, .content h2{
     padding: 40px 80px;
     margin:auto;
     font-size: 35px;
-    background-color: white;
-    color: rgb(56,144,130);
-    border: 1px solid rgba(255,255,255,.3);
+    color: white;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all  .3s ease-in-out;
 }#level5 a:hover{
-    background-color: rgb(56,144,130);
-    color: white;
-    border: 1px solid rgba(255,255,255,.3);
-    -moz-transition: all .1s ease-in-out;
-    -webkit-transition: all .1s ease-in-out;
-    -o-transition: all .1s ease-in-out;
-    transition: all  .1s ease-in-out;
+    background-color: white;
+    color: rgb(56,144,130);
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all  .2s ease-in-out;
 }
 
 #secondary-logo{
