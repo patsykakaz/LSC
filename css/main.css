@@ -77,12 +77,21 @@ body{
 #signature{
     position: absolute;
     right: 10%;
-    top: 40%;
+    bottom: 50%;
 }#signature h1, #signature h4{
     margin-top: 0;
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
     color: rgba(255,255,255,.5);
+}
+@media screen and (max-width: 768px){
+    #signature{
+        position: absolute;
+        bottom: 20px;
+        left: 10%;
+    }#signature h1, #signature h4{
+        margin-top: 0;
+    }
 }
 #city{
     position: absolute;
