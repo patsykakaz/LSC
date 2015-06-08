@@ -79,8 +79,9 @@ body{
     right: 10%;
     bottom: 45%;
     width: auto;
+    margin: 20px;
 }#signature img{
-    /*max-width: 300px;*/
+    padding: 20px 10px 20px 0;
 }
 #signature h4{
     margin-top: 0;
@@ -91,32 +92,32 @@ body{
 #city{
     position: absolute;
     bottom: 10px;
-    font-size: 18px;
+    width: 100%;
+    font-size: 16px;
     font-weight: lighter;
     color: rgba(255,255,255,.5);
 }
 .city{
-    margin: 30px;
-    position: relative;
-    left: 5px
+    width: 50%;
+    position: absolute;
+    bottom: 10px;
+    padding: 0 30px;
+}.city:first-child{
+    left: 0;
+    text-align: right;
+}.city:nth-child(2){
+    left:50%;
 }
 @media screen and (max-width: 768px){
-    #signature{
+    #signature{}
+    #signature img{
         position: absolute;
-        bottom: 20px;
-        left: 0;
-        width: 100%;
-    }
-    #signature h1, #signature h4{
-        display: inline-block;
-        width: 47%;
-        padding-left: 40px;
-        text-align: right;
-    }#signature h4{
-        text-align: left;
+        right: 50%;
+        bottom: 40px;
     }
     .city{
-        display: none;
+        bottom: 0px;
+        font-size: 12px;
     }
 }
 
@@ -171,7 +172,7 @@ body{
     /*padding-right: 10%;*/
     margin: auto;
     text-align: justify;
-    color: rgb(162,162,162);
+    color: rgb(140,140,140);
 }
 h2, .content h2{
     margin-bottom: 50px;
@@ -295,6 +296,12 @@ h2, .content h2{
     -o-transition: all 2s ease-in-out;
     transition: all 2s ease-in-out;
 }
+#logo.done{
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
 .logo{
     opacity: .6;
     -ms-transform: rotate(90deg);
@@ -308,4 +315,15 @@ h2, .content h2{
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
+}
+
+
+::-moz-selection { 
+    color: white;
+    background: rgba(56,144,130,.6);
+}
+
+::selection {
+    color: white;
+    background: rgba(56,144,130,.6);
 }
