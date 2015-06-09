@@ -82,6 +82,12 @@ function level1(){
     }else{
         $('#signature').css('left',$(window).width()*4/5 - 30);
     }
+    letter_spacing = 0;
+    while($('#signature h4').width()<$('#signature img').width()){
+        letter_spacing ++;
+        $('#signature h4').css('letter-spacing',letter_spacing+'px');
+    }
+
     // $('#city').css('margin-left', ($(window).width()-$('#city').outerWidth())/2+20);
 }
 

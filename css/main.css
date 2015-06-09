@@ -89,6 +89,7 @@ h1,h2,h3,h4,h5,h6{
     padding: 20px 10px 20px 0;
 }
 #signature h4{
+    display: inline-block;
     margin-top: 0;
     font-weight: lighter;
     color: rgba(255,255,255,.5);
