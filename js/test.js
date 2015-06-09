@@ -8,11 +8,12 @@ $(document).ready(function(){
             target.attr('deploy', 'on');
             $('.item-offre').not(this).children('.item-offre-wrapper').css('height', '0px');
             $('.item-offre').not(this).attr('deploy','off');
+            $('#offre').css('margin-top',($(window).height()-$('#offre').outerHeight())/2-content.outerHeight()/2);
         }else{
             target.attr('deploy','off');
             wrapper.css('height', 0);
+            $('#offre').css('margin-top',($(window).height()-$('#offre').outerHeight())/2);
         }
-        $('#offre').css('margin-top',($(window).height()-$('#offre').outerHeight())/2);
     });
 });
 
