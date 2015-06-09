@@ -194,7 +194,9 @@ $(window).on({
 */
 
 $('#level1').click(function(){
-    nextSlide();
+    if($(window).width()>768){
+        nextSlide();
+    }
 });
 
 $('#level2 a').click(function(){

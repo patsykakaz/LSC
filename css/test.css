@@ -4,12 +4,17 @@
     topaze = rgb(56,144,130);
     light-grey = rgb(162,162,162);
 */
-
 .item-offre{
-
+    -moz-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
-.item-offre-title{
-    
+.item-offre[deploy=on] .item-offre-title{
+    font-weight: normal;
+}
+.item-offre[deploy=off] .item-offre-title{
+
 }
 
 .item-offre-wrapper{
@@ -22,6 +27,8 @@
 }
 
 .item-offre-content{
+    line-height: normal;
+    padding: 20px;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -30,10 +37,11 @@
 .item-offre-content.off{
     height: 0px;
 }
-
-#testXX path{
-    background-color: purple;
-    fill: red;
+#level4 h4{
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
 }
 
 

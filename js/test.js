@@ -12,10 +12,8 @@ $(document).ready(function(){
             target.attr('deploy','off');
             wrapper.css('height', 0);
         }
+        $('#offre').css('margin-top',($(window).height()-$('#offre').outerHeight())/2);
     });
-
-$svg = $("#secondary-logo-svg");
-$("#testSVG", $svg).attr('style', "fill:red");
 });
 
 

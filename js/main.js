@@ -1,16 +1,19 @@
 $(document).ready(function(){
     level1();
     level3();
+    level4();
     level5();
 });
 $(window).load(function(){
     level1();
     level3();
+    level4();
     level5();
 });
 $(window).resize(function(){
     level1();
     level3();
+    level4();
     level5();
 });
 
@@ -97,10 +100,13 @@ function level3(){
 // ./#level3
 
 // #level4
+function level4(){
+    $('#offre').css('margin-top',($(window).height()-$('#offre').outerHeight())/2);
+}
 // ./#level4
 
 // #level5
 function level5(){
-    $('#level5 a').css('margin-top', ($(window).height()-$('#level5 a').outerHeight())/2);
+    // $('#mail').css('margin-top', ($(window).height()-$('#mail').outerHeight()-$('#level5 h3').outerHeight()-80)/2);
 }
 // ./#level5

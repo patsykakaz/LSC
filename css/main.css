@@ -11,6 +11,11 @@ body{
     font-weight: lighter;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+}
+
 @media screen and (max-width: 600px) {
     h1,h2,h3{
         margin: 10px 0 15px 0;
@@ -85,7 +90,6 @@ body{
 }
 #signature h4{
     margin-top: 0;
-    font-family: 'Lato', sans-serif;
     font-weight: lighter;
     color: rgba(255,255,255,.5);
 }
@@ -204,9 +208,11 @@ h2, .content h2{
     color: white;
     font-size: 20px;
 }
-#level4 .caption{
-    padding: 80px 30px 0 30px;
-    margin: auto;
+#offre{
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all  .2s ease-in-out;
 }
 #level4 .item-offre{
     line-height: 45px;
@@ -218,6 +224,20 @@ h2, .content h2{
 #level5{
     background-color: rgb(56,144,130);
     text-align: center;
+}
+#level5 h3{
+    margin-top: 15%;
+    color: white;
+}
+#mail{
+margin-top: 150px;
+}
+@media screen and (max-width: 768px){
+    #level5 h3{
+        margin-top: 150px;
+    }
+    #mail{margin-top: 50px;
+    }
 }
 #level5 a{
     display: inline-block;
