@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5,h6{
     width: auto;
     margin: 20px;
 }#signature img{
-    padding: 20px 10px 20px 0;
+    padding: 10px 0;
 }
 #signature h4{
     display: inline-block;
@@ -121,7 +121,7 @@ h1,h2,h3,h4,h5,h6{
     .layer-signature{
         position: absolute;
         width: 50%;
-        padding: 5%;
+        padding: 5% 3%;
     }.layer-signature:first-child{
         text-align: right;
         left: 0;
@@ -240,7 +240,7 @@ h2, .content h2{
     text-align: center;
     font-size: 10px;
     font-weight: normal;
-    color: rgb(56,144,130);
+    color: rgb(162,162,162);
 }
 
 #level5{
