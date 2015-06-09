@@ -230,7 +230,6 @@ h2, .content h2{
 #level4 .titre{
     width: 100%;
     position: absolute;
-    font-weight: normal;
     font-size: 20px;
     color: rgb(56,144,130);
 }
