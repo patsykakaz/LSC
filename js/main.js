@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    // level1();
+    level1();
     level3();
     level4();
     level5();
