@@ -12,7 +12,11 @@ $(document).ready(function(){
         }else{
             target.attr('deploy','off');
             wrapper.css('height', 0);
-            $('#offre').css('margin-top',($(window).height()-$('#offre').outerHeight())/2);
+            H = 0;
+            $(".item-offre-title").each(function(){
+                H += $(this).outerHeight();
+            });
+            $('#offre').css('margin-top',($(window).height()-H)/2);
         }
     });
 });
