@@ -73,12 +73,16 @@ function level1(){
     },6000);
     // ./#logo
 
-    $('#signature img').width($(window).width()*1/5);
+    if($(window).width()>768){
+        $('#signature img').width($(window).width()*1/5);
+    }
     $("#signature").width($('#signature img').outerWidth());
     if($(window).width() > 1000){
         $('#signature').css('left',$(window).width()*4/5 - 100);
-    }else{
+    }else if($(window).width()>768){
         $('#signature').css('left',$(window).width()*4/5 - 30);
+    }else{
+        $('#signature').width('100%').css('left',0);
     }
     letter_spacing = 0;
     font_size = 18;
