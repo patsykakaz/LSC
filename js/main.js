@@ -5,6 +5,7 @@ $(document).ready(function(){
     level5();
 });
 $(window).load(function(){
+    $('#mask').fadeOut();
     level1();
     level3();
     level4();
