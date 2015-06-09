@@ -29,6 +29,7 @@
 .item-offre-content{
     line-height: normal;
     padding: 20px;
+    font-size: 15px;
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
@@ -36,12 +37,6 @@
 }
 .item-offre-content.off{
     height: 0px;
-}
-#level4 h4{
-    position: absolute;
-    bottom: 30px;
-    width: 100%;
-    text-align: center;
 }
 
 
@@ -98,18 +93,4 @@
     text-shadow: 0 0 1px rgba(0,0,0,.3);
 }
 /* ./puzzle */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

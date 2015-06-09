@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    level1();
+    // level1();
     level3();
     level4();
     level5();
@@ -47,8 +47,6 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-
-
 // NAV
     $('#nav').css('margin-top', ($(window).height()-$('#nav').outerHeight())/2);
 // ./NAV
@@ -83,9 +81,12 @@ function level1(){
         $('#signature').css('left',$(window).width()*4/5 - 30);
     }
     letter_spacing = 0;
-    while($('#signature h4').width()<$('#signature img').width()){
-        letter_spacing ++;
-        $('#signature h4').css('letter-spacing',letter_spacing+'px');
+    font_size = 18;
+    while($('#signature h4').width()<$('#signature img').width() && $('#signature img').height()<$('#signature h4').height()){
+            letter_spacing += 0.1;
+            $('#signature h4').css('letter-spacing',letter_spacing+'px');
+            font_size --;
+            // $('#signature h4').css('font-size',font_size+'px');
     }
 
     // $('#city').css('margin-left', ($(window).width()-$('#city').outerWidth())/2+20);
@@ -107,6 +108,7 @@ function level3(){
 
 // #level4
 function level4(){
+    $('#level4 .banner').css('margin-top',$('#secondary-logo').outerHeight()/2)
     $('#offre').css('margin-top',($(window).height()-$('#offre').outerHeight())/2);
 }
 // ./#level4
