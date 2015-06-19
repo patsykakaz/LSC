@@ -10,7 +10,9 @@ body{
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
 }
-
+strong{
+    color: rgb(56,144,130);
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Lato', sans-serif;
     font-weight: lighter;
@@ -71,7 +73,7 @@ h1,h2,h3,h4,h5,h6{
 }#nav.fade-nav .fa,#nav.fade-nav .side-menu-caption{
     color: transparent;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     #nav .side-menu-caption{
         display: none;
     }

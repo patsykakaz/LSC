@@ -3,6 +3,9 @@ $(document).ready(function(){
     level3();
     level4();
     level5();
+    if($(window).width()<768){
+        alert('Version mobile en cours de développement...');
+    }
 });
 $(window).load(function(){
     $('#mask').fadeOut();
@@ -16,12 +19,14 @@ $(window).resize(function(){
     level3();
     level4();
     level5();
+    if($(window).width()<768){
+        alert('Version mobile en cours de développement...');
+    }
 });
 
 
 // GESTION LOGO rebuilding
 $(document).ready(function(){
-
 });
 // ./GESTION LOGO rebuiding
 
@@ -48,10 +53,9 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-// NAV
+    // NAV
     $('#nav').css('margin-top', ($(window).height()-$('#nav').outerHeight())/2);
-// ./NAV
-
+    // ./NAV
     // #level2
     $('#level2 nav').css('margin-top', ($(window).height()-$('#level2 nav').outerHeight())/2);
     // ./#level2

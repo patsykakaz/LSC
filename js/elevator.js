@@ -194,9 +194,15 @@ $(window).on({
 */
 
 $('#level1').click(function(){
-    if($(window).width()>768){
+    if($(window).width()>600){
         nextSlide();
     }
+});
+
+$('#secondary-logo').click(function(){
+    currentSlideIndex = 0;
+    showSlide();
+    reduceSecondaryLogo()
 });
 
 $('#level2 a').click(function(){
